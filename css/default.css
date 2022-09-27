@@ -1,6 +1,6 @@
 body{
     font-family: "Comic Sans MS";
-    background-color: deeppink;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
     color: white;
 }
 
@@ -10,13 +10,16 @@ body{
 
 .container{
     margin: auto;
-    width: 60%;
-    border: 1px dotted deeppink;
-    border-right: 0px;
-    border-left: 0px;
+    width: 50%;
     padding: 10px;
 }
-
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 ul.ponys {
 	min-width: 300px;
 	list-style: none;
@@ -34,5 +37,4 @@ ul.ponys li figure img{
 ul.ponys li figure figcaption {
     text-align: center;
     font-size: 150%;
-
 } 
